@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <title>Calculator</title>
+</head>
+<body>
+    <script src="script.js"></script>
+        <div class="form">
+            <form name="form2">
+            <input class="answer" name="answer">
+            </form>
+
+            <div id="container">
+            <button class="cal_button clear" value="C" onclick="form2.answer.value = ' '">C</button>
+            <button class="cal_button" value ="/" onclick="insert('/')">&divide;</button>
+            </div>
+
+            <div id="container1">
+                <button class="cal_button" value ="9" onclick="insert('9')">9</button>
+                <button class="cal_button" value ="8" onclick="insert('8')">8</button>
+                <button class="cal_button" value ="7" onclick="insert('7')">7</button>
+                <button class="cal_button" value ="*" onclick="insert('*')">&times;</button>
+            </div>
+
+            <div id="container2">
+                <button class="cal_button" value ="6" onclick="insert('6')">6</button>
+                <button class="cal_button" value ="5" onclick="insert('5')">5</button>
+                <button class="cal_button" value ="4" onclick="insert('4')">4</button>
+                <button class="cal_button" value ="-" onclick="insert('-')">&minus;</button>
+            </div>
+
+            <div id="container3">
+                <button class="cal_button" value ="3" onclick="insert('3')">3</button>
+                <button class="cal_button" value ="2" onclick="insert('2')">2</button>
+                <button class="cal_button" value ="1" onclick="insert('1')">1</button>
+                <button class="cal_button" value ="+" onclick="insert('+')">&plus;</button>
+            </div>
+
+            <div id="container4">
+                <button class="cal_button is-zero" value ="0" onclick="insert('0')">0</button>
+                <button class="cal_button is-equals" value="=" onclick="equal('=')">&equals;</button>
+            </div>
+
+        </div>
+</body>
+</html>
